@@ -6,7 +6,7 @@ import projectRoutes from "./routes/project.routes.js";
 import testcaseRoutes from "./routes/testcase.routes.js";
 import testExecutionRoutes from "./routes/testExecution.routes.js";
 import dashboardRoutes from "./routes/dashboard.routes.js";
-import testSuiteRoutes from "./routes/testsuite.routes.js";
+import testSuiteRoutes from "./routes/testSuite.routes.js";
 
 import { authenticate } from "./middleware/auth.middleware.js";
 import { authorizeRoles } from "./middleware/role.middleware.js";
@@ -14,7 +14,7 @@ import { authorizeRoles } from "./middleware/role.middleware.js";
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
