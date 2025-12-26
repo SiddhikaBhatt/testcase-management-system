@@ -6,7 +6,7 @@ import projectRoutes from "./routes/project.routes.js";
 import testcaseRoutes from "./routes/testcase.routes.js";
 import testExecutionRoutes from "./routes/testExecution.routes.js";
 import dashboardRoutes from "./routes/dashboard.routes.js";
-import testsuiteRoutes from "./routes/testsuite.routes.js";
+import testSuiteRoutes from "./routes/testsuite.routes.js";
 
 import { authenticate } from "./middleware/auth.middleware.js";
 import { authorizeRoles } from "./middleware/role.middleware.js";
