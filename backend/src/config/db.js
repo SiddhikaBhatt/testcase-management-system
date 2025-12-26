@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config(); // ✅ ensures env is loaded for ALL entry points
+dotenv.config();
 
 import pkg from "pg";
 const { Pool } = pkg;
@@ -8,7 +8,6 @@ if (!process.env.DATABASE_URL) {
   throw new Error("DATABASE_URL is not set");
 }
 
-// 🔐 Force pg to ignore Windows PG* env vars
 const url = new URL(process.env.DATABASE_URL);
 
 const pool = new Pool({
