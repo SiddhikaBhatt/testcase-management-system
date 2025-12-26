@@ -12,8 +12,6 @@ import { authenticate } from "./middleware/auth.middleware.js";
 import { authorizeRoles } from "./middleware/role.middleware.js";
 
 const app = express();
-
-/* ✅ CORS — ONLY ONCE, AT TOP */
 app.use(
   cors({
     origin: "http://localhost:5174",
