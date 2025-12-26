@@ -40,6 +40,6 @@ app.use("/api/projects", projectRoutes);
 app.use("/api/testcases", testcaseRoutes);
 app.use("/api/executions", testExecutionRoutes);
 app.use("/api/dashboard", dashboardRoutes);
-app.use("/api/testsuites", testsuiteRoutes);
+app.use("/api/testsuites", testSuiteRoutes);
 
 export default app;
